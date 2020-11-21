@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+    testCompile 'au.com.dius.pact.consumer:groovy:4.1.0'
+}
+
+application {
+    mainClassName = 'com.tm.pact.App'
+}
+
+test {
+    useJUnitPlatform()
+}
