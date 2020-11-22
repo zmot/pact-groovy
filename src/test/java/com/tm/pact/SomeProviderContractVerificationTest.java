@@ -6,7 +6,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.mockito.Mockito.anyString;
 import static org.mockito.Mockito.when;
 
 @Provider("SomeProvider")
@@ -17,6 +16,6 @@ public class SomeProviderContractVerificationTest {
 
     @BeforeEach
     void setUpExternalDependencies() {
-        when(someExternalDependency.getPersonalizedGreeting(anyString())).thenReturn("Hello Xyz!");
+        when(someExternalDependency.getPersonalizedGreeting("Tom")).thenReturn("Hello Tom!");
     }
 }
