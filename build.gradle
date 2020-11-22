@@ -9,11 +9,22 @@ repositories {
 }
 
 dependencies {
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    testImplementation 'org.codehaus.groovy.modules.http-builder:http-builder:0.7'
+    testImplementation 'org.codehaus.groovy:groovy-all:2.5.10'
+
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+
     testCompile 'au.com.dius.pact.consumer:groovy:4.1.0'
+
 }
 
+
+compileTestGroovy {
+    groovyClasspath = configurations.testCompileClasspath
+}
 application {
     mainClassName = 'com.tm.pact.App'
 }
