@@ -1,0 +1,18 @@
+{
+  "productId": "25b30263-2c2f-4891-a13d-3570abcad538",
+  "dimensions": {
+    "width": 10.05,
+    "length": 50.21,
+    "height": 2.50
+  },
+  "alternatives": [
+    {
+      "productId": "79d50b92-320d-49b2-8eff-e8c2ce680430",
+      "count": 1
+    },
+    {
+      "productId": "43a34303-eb0b-4c4f-8da5-a4a82b2d3bb3",
+      "count": 2
+    }
+  ]
+}

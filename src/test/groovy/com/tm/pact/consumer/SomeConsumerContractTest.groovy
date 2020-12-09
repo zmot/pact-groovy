@@ -1,4 +1,4 @@
-package com.tm.pact
+package com.tm.pact.consumer
 
 
 import au.com.dius.pact.consumer.groovy.PactBuilder
@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test
 
 class SomeConsumerContractTest {
     @Test
-    void "Some pact between SomeConsumer and SomeProvider"() {
+    void "Some pact between Some Consumer and Some Provider"() {
 
         new PactBuilder()
                 .with {
-                    serviceConsumer "SomeConsumer"
-                    hasPactWith "SomeProvider"
+                    serviceConsumer "Some Consumer"
+                    hasPactWith "Some Provider"
                     port 8080
 
                     uponReceiving('a retrieve hello request')
