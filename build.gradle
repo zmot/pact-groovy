@@ -20,12 +20,14 @@ dependencies {
 
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
 
-    testCompile 'au.com.dius.pact.consumer:groovy:4.1.0'
-    testCompile 'au.com.dius.pact:consumer:4.1.0'
-    testCompile 'au.com.dius.pact.consumer:java8:4.1.0'
+    testCompile 'au.com.dius.pact.consumer:groovy:4.1.7'
+    testCompile 'au.com.dius.pact:consumer:4.1.7'
+    testCompile 'au.com.dius.pact.consumer:java8:4.1.7'
 
-    testCompile 'au.com.dius.pact.provider:junit5:4.1.0'
+    testCompile 'au.com.dius.pact.provider:junit5:4.1.7'
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.2'
+
+    testCompile "com.github.tomakehurst:wiremock-jre8:2.27.2"
 
 }
 
